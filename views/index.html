@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+      <div class="theTitle active">
+        <div class="left"><h1>API</h1></div>
+        <span class="separator"></span>
+        <div class="right"><p>Url <br>shortner</p></div>
+    </div>
+        <h3 class="shortner">Short URL Creation </h3>
+        <form action="api/shorturl/new" method="POST">
+          <input class="urlin" id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
+          <input class="gobutton"type="submit" value="POST URL">
+        </form>
+        
+        <hr>
+        <section class="usage">
+          <h3>Example Usage:</h3>
+          <a href="https://flint-course.glitch.me/api/shorturl/new">
+            Click me
+          </a>
+        </section>
+  
+   </body>
+
+
+</html>
